@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StarWars</string>
+    <string name="about_person">About Person</string>
+    <string name="fetch_movies">Fetching movies....</string>
+    <string name="filters">Filters</string>
+    <string name="apply_filters">Apply Filters Here!</string>
+
+</resources>
