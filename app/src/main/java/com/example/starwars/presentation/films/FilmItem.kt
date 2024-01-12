@@ -1,7 +1,9 @@
 package com.example.starwars.presentation.films
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.IntrinsicSize
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -30,13 +32,22 @@ fun FilmItem(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(IntrinsicSize.Max)
-                .padding(16.dp)
+                .padding(10.dp)
         ) {
-            Text(text = "Title : ${film.title}")
-            Text(text = "Director Name : ${film.director}")
-            Text("Release Date: ${film.release_date}")
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Text(text = "Title : ${film.title}")
+            }
 
+            Spacer(modifier = Modifier.height(8.dp))
+
+            Text(text = "Director Name : ${film.director}")
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            Text("Release Date: ${film.release_date}")
         }
     }
 }

@@ -1,10 +1,10 @@
 package com.example.starwars.presentation.persons
 
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.IntrinsicSize
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -31,16 +31,19 @@ fun PersonItem(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(IntrinsicSize.Max)
-                .padding(16.dp)
+                .padding(10.dp)
         ) {
-            Text(text = "Name : ${person.name}")
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Text(text = "Name : ${person.name}")
+            }
 
             Text(text = "Gender : ${person.gender}")
-
             Text(text = "BirthYear : ${person.birth_year}")
-
         }
     }
 }
+
 
