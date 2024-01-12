@@ -21,3 +21,8 @@
 - [Coroutines & Flows](https://kotlinlang.org/docs/coroutines-overview.html): Coroutines and Flows are powerful concurrency and asynchronous programming constructs in Kotlin. Coroutines simplify managing background tasks, making code more readable and maintainable. Flows extend coroutines by providing a reactive programming model for handling streams of data asynchronously.
 - [Paging3](https://developer.android.com/topic/libraries/architecture/paging/v3-overview): Paging3 is a library that helps load and display large sets of data efficiently in Android apps.
 - [Retrofit](https://square.github.io/retrofit/): It is a popular HTTP client library for Android and Java that simplifies the process of making network requests. With a clean and simple API, Retrofit allows you to define API endpoints, manage request and response transformations, and handle errors effectively, streamlining the networking layer of your app.
+
+#### Demo Video
+
+https://github.com/utkarsh006/FilmsInfoApp/assets/94545831/34546195-ea96-47e1-95dd-1982ede94277
+
